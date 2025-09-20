@@ -23,6 +23,7 @@ public class CreateCampaigns extends BaseClass {
 		cp.getCampaignName().sendKeys(NAME);
 		cp.getSaveBtn().click();
 		
+		System.out.println("Done done");
 	}
 	
 }
