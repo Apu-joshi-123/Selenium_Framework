@@ -10,19 +10,16 @@ public class CampaignPage {
 	public CampaignPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy (xpath="//img[@alt='Create Campaign...']")
+
+	@FindBy(xpath = "//img[@alt='Create Campaign...']")
 	private WebElement createCampaignBtn;
-	
-	@FindBy (name="campaignname")
+
+	@FindBy(name = "campaignname")
 	private WebElement campaignName;
-	
+
 	@FindBy(xpath = "//input[@class='crmButton small save']")
 	private WebElement saveBtn;
-	
-	@FindBy(xpath = "//span[@class='dvHeaderText']")
-	private WebElement header;
-	
+
 	@FindBy(xpath = "//input[@value='Mass Edit']")
 	private WebElement massEditBtn;
 
@@ -38,14 +35,8 @@ public class CampaignPage {
 		return saveBtn;
 	}
 
-	public WebElement getHeader() {
-		return header;
-	}
-	
 	public WebElement getMassEditBtn() {
 		return massEditBtn;
 	}
 
-	
-	
 }
